@@ -11,6 +11,8 @@ import stylesheet from "~/tailwind.css?url";
 import { cn } from "~/lib/utils";
 import Navbar from "~/components/Navbar";
 
+import { ThemeProvider } from "~/components/ThemeProvider";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "PagePal" },
@@ -24,7 +26,7 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="light">
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,10 +35,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body
         style={{ fontFamily: "Inter, sans serif" }}
-        className={cn('min-h-screen font-sans antialiased grainy')}
+        className={cn('min-h-screen font-sans antialiased')}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+        </ThemeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
