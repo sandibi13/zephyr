@@ -1,8 +1,9 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss"
 
-export default {
+const config = {
   darkMode: ["class"],
   content: ['./app/**/*.{js,jsx,ts,tsx}'],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -12,9 +13,6 @@ export default {
       },
     },
     extend: {
-      maxWidth: {
-        "8xl": "1408px",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -71,8 +69,7 @@ export default {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("tailwindcss-animate"),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config
+
+export default config

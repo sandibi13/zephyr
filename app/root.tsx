@@ -9,11 +9,12 @@ import {
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
 import { cn } from "~/lib/utils";
+import Navbar from "~/components/Navbar";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "PagePal" },
+    { name: "description", content: "Chat with your documents in seconds" },
   ];
 };
 
@@ -30,7 +31,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className={cn('min-h-screen font-sans antialiased grainy')}>
+      <body
+        style={{ fontFamily: "Inter, sans serif" }}
+        className={cn('min-h-screen font-sans antialiased grainy')}
+      >
+        <Navbar />
         {children}
         <ScrollRestoration />
         <Scripts />
