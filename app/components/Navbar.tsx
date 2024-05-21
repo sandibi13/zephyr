@@ -19,7 +19,7 @@ const Navbar = () => {
             {
               <>
                 <Link
-                  to='/pricing'
+                  to="/pricing"
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to='/kinde-auth/login'
+                  to="/kinde-auth/login"
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to='/kinde-auth/register'
+                  to="/kinde-auth/register"
                   className={buttonVariants({
                     size: 'sm',
                   })}
