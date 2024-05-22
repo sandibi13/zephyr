@@ -1,21 +1,25 @@
-import WidthWrapper from '~/components/WidthWrapper';
-import { Link } from '@remix-run/react';
-import { ModeToggle } from '~/components/ui/mode-toggle';
-import { buttonVariants } from '~/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import WidthWrapper from '~/components/WidthWrapper'
+import { Link } from '@remix-run/react'
+import { ModeToggle } from '~/components/ui/mode-toggle'
+import { buttonVariants } from '~/components/ui/button'
+import { ArrowRight } from 'lucide-react'
+import MobileNav from '~/components/MobileNav'
 
 const Navbar = () => {
   return (
     <nav className="sticky inset-x-0 top-0 z-30 h-14 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:border-gray-700 dark:bg-gray-900/75">
       <WidthWrapper>
-        <div className="flex h-14 items-center justify-between border-b border-zinc-200 dark:border-zinc-700">
-          <Link to="/" className="z-40 flex font-bold text-violet-600">
-            <span>PagePal</span>
+        <div className="flex h-14 items-center justify-between">
+          <Link to="/" className="z-40 flex items-center space-x-1">
+            <img
+              src="/app/assets/logo.png"
+              alt="logo"
+              className="h-6 w-6"
+            />
+            <span className="font-bold text-violet-600">PagePal</span>
           </Link>
 
-          {/* Mobile navigation */}
-
-          <div className="hidden items-center space-x-4 sm:flex">
+          <div className="hidden sm:flex items-center space-x-4">
             {
               <>
                 <Link
@@ -52,10 +56,14 @@ const Navbar = () => {
           </div>
 
           <ModeToggle />
+
+          <div className="sm:hidden">
+            <MobileNav />
+          </div>
         </div>
       </WidthWrapper>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
