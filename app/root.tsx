@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body
         style={{ fontFamily: "Inter, sans serif" }}
-        className={cn('min-h-screen font-sans antialiased grainy')}
+        className={cn("min-h-screen font-sans antialiased grainy")}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />

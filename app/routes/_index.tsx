@@ -13,16 +13,18 @@ export default function Index() {
           </p>
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl text-gray-900 dark:text-gray-100">
-          Chat with your <span className="text-violet-600">documents</span> in seconds
+          Chat with your <span className="text-violet-600">documents</span> in
+          seconds
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 dark:text-zinc-300 sm:text-lg">
-          PagePal allows you to have conversations with any PDF document. Simply upload your file and start asking questions right away.
+          PagePal allows you to have conversations with any PDF document. Simply
+          upload your file and start asking questions right away.
         </p>
 
         <Link
           className={buttonVariants({
-            size: 'lg',
-            className: 'mt-5',
+            size: "lg",
+            className: "mt-5",
           })}
           to="/dashboard"
           target="_blank"
@@ -35,10 +37,12 @@ export default function Index() {
         <div className="relative isolate">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          >
             <div
               style={{
-                clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             />
@@ -62,10 +66,12 @@ export default function Index() {
 
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          >
             <div
               style={{
-                clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
               className="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
             />
@@ -85,7 +91,7 @@ export default function Index() {
           </div>
         </div>
 
-        <ol className='my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0'>
+        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0">
           <li className="md:flex-1">
             <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 dark:border-zinc-700 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
               <span className="text-sm font-medium text-violet-600">
@@ -95,7 +101,7 @@ export default function Index() {
                 Sign up for an account
               </span>
               <span className="mt-2 text-zinc-700 dark:text-zinc-400">
-                Either starting out with a free plan or choose our{' '}
+                Either starting out with a free plan or choose our{" "}
                 <Link
                   to="/pricing"
                   className="text-violet-700 dark:text-violet-500 underline underline-offset-2"
@@ -114,7 +120,8 @@ export default function Index() {
                 Upload your PDF file
               </span>
               <span className="mt-2 text-zinc-700 dark:text-zinc-400">
-                We&apos;ll process your file and make it ready for you to chat with
+                We&apos;ll process your file and make it ready for you to chat
+                with
               </span>
             </div>
           </li>
@@ -127,7 +134,8 @@ export default function Index() {
                 Start asking questions
               </span>
               <span className="mt-2 text-zinc-700 dark:text-zinc-400">
-                It&apos;s that simple. Try out Quill today - it really takes less than a minute
+                It&apos;s that simple. Try out Quill today - it really takes
+                less than a minute
               </span>
             </div>
           </li>

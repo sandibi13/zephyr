@@ -1,9 +1,9 @@
-import WidthWrapper from '~/components/WidthWrapper'
-import { Link } from '@remix-run/react'
-import { ModeToggle } from '~/components/ui/mode-toggle'
-import { buttonVariants } from '~/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import MobileNav from '~/components/MobileNav'
+import WidthWrapper from "~/components/WidthWrapper";
+import { Link } from "@remix-run/react";
+import { ModeToggle } from "~/components/ui/mode-toggle";
+import { buttonVariants } from "~/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import MobileNav from "~/components/MobileNav";
 
 const Navbar = () => {
   return (
@@ -11,11 +11,7 @@ const Navbar = () => {
       <WidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200 dark:border-zinc-700">
           <Link to="/" className="z-40 flex items-center space-x-1">
-            <img
-              src="/app/assets/logo.png"
-              alt="logo"
-              className="h-6 w-6"
-            />
+            <img src="/app/assets/logo.png" alt="logo" className="h-6 w-6" />
             <span className="font-bold text-violet-600">PagePal</span>
           </Link>
 
@@ -25,8 +21,8 @@ const Navbar = () => {
                 <Link
                   to="/pricing"
                   className={buttonVariants({
-                    variant: 'ghost',
-                    size: 'sm',
+                    variant: "ghost",
+                    size: "sm",
                   })}
                 >
                   Pricing
@@ -35,8 +31,8 @@ const Navbar = () => {
                 <Link
                   to="/kinde-auth/login"
                   className={buttonVariants({
-                    variant: 'ghost',
-                    size: 'sm',
+                    variant: "ghost",
+                    size: "sm",
                   })}
                 >
                   Sign in
@@ -45,11 +41,10 @@ const Navbar = () => {
                 <Link
                   to="/kinde-auth/register"
                   className={buttonVariants({
-                    size: 'sm',
+                    size: "sm",
                   })}
                 >
-                  Get started{' '}
-                  <ArrowRight className="ml-1.5 h-5 w-5" />
+                  Get started <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
               </>
             }
@@ -63,7 +58,7 @@ const Navbar = () => {
         </div>
       </WidthWrapper>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
