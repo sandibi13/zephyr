@@ -27,7 +27,6 @@ export default function Index() {
             className: "mt-5",
           })}
           to="/dashboard"
-          target="_blank"
         >
           Get Started <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
