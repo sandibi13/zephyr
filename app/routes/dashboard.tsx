@@ -1,6 +1,7 @@
 import { getKindeSession } from "@kinde-oss/kinde-remix-sdk";
 import { LoaderFunctionArgs, redirect } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+import Dashboard from "~/components/Dashboard";
 import { db } from "~/db";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
@@ -24,12 +25,8 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   return { user };
 };
 
-export default function Dashboard() {
+export default function DashboardPage() {
   const { user } = useLoaderData();
 
-  return (
-    <div>
-      <h1>{user.email}</h1>
-    </div>
-  );
+  return <Dashboard />;
 }

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import WidthWrapper from "~/components/WidthWrapper";
 import { buttonVariants } from "~/components/ui/button";
 
-export default function Index() {
+export default function IndexPage() {
   return (
     <>
       <WidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">

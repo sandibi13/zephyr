@@ -6,7 +6,7 @@ type AuthCallbackResponse = {
   success: boolean;
 };
 
-export default function AuthCallback() {
+export default function AuthCallbackPage() {
   const fetcher = useFetcher<AuthCallbackResponse>();
   const [searchParams] = useSearchParams();
   const origin = searchParams.get("origin");
