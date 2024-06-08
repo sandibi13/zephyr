@@ -21,7 +21,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     return redirect("/auth-callback?origin=dashboard");
   }
 
-  return { user };
+  return null;
 };
 
 export default function DashboardPage() {
