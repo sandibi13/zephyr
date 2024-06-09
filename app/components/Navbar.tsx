@@ -11,7 +11,7 @@ const Navbar = () => {
       <WidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200 dark:border-zinc-700">
           <Link to="/" className="z-40 flex items-center space-x-1">
-            <img src="/app/assets/logo.png" alt="logo" className="h-6 w-6" />
+            <img src="/app/assets/pagepal.svg" alt="logo" className="h-6 w-6" />
             <span className="font-bold text-violet-600">PagePal</span>
           </Link>
 
