@@ -1,3 +1,5 @@
+import { Footer } from "@/components/landing/footer";
+import { Header } from "@/components/landing/header";
 import React from "react";
 
 export default function LandingLayout({
@@ -5,5 +7,12 @@ export default function LandingLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <div className="bg-background">
+      <Header />
+      {children}
+      <div className="h-20" />
+      <Footer />
+    </div>
+  );
 }

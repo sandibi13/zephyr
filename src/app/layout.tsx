@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+import { fontSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Zephyr",
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("font-sans antialiased", inter.className)}>
+      <body className={cn("font-sans antialiased", fontSans.variable)}>
         <Providers
           attribute="class"
           defaultTheme="system"
