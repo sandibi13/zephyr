@@ -2,16 +2,13 @@
 
 import * as React from "react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { ThemeProviderProps } from "next-themes/dist/types";
-import { SidebarProvider } from "@/hooks/use-sidebar";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { type ThemeProviderProps } from "next-themes/dist/types";
+import { TooltipProvider } from "./ui/tooltip";
 
-export function Providers({ children, ...props }: ThemeProviderProps) {
+export const Providers = ({ children, ...props }: ThemeProviderProps) => {
   return (
     <NextThemesProvider {...props}>
-      <SidebarProvider>
-        <TooltipProvider>{children}</TooltipProvider>
-      </SidebarProvider>
+      <TooltipProvider>{children}</TooltipProvider>
     </NextThemesProvider>
   );
-}
+};

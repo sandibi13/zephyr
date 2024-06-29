@@ -2,7 +2,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
 import React from "react";
 
-export default function HomePage() {
+export default function LandingPage() {
   return (
     <div className="min-h-screen">
       <div className="flex items-center justify-between h-full w-full px-3 py-3">

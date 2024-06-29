@@ -1,13 +1,17 @@
 import { Navbar } from "@/components/navbar";
-import { SidebarDesktop } from "@/components/sidebar-desktop";
-import { ReactNode } from "react";
+import { Sidebar } from "@/components/sidebar";
+import React from "react";
 
-export default function ChatLayout({ children }: { children: ReactNode }) {
+export default function ChatLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="flex flex-col flex-1 bg-muted/50">
-      <Navbar />
-      <div className="relative flex h-[calc(100vh_-_theme(spacing.16))] overflow-hidden">
-        <SidebarDesktop />
+    <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
+      <Sidebar />
+      <div className="flex flex-col">
+        <Navbar />
         {children}
       </div>
     </div>
