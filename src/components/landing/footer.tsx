@@ -1,4 +1,4 @@
-import { Code2 } from "lucide-react";
+import { CodeIcon } from "@radix-ui/react-icons";
 import React from "react";
 import { ModeToggle } from "../mode-toggle";
 import Link from "next/link";
@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <footer className="mt-6 px-4 py-6">
       <div className="container flex items-center p-0">
-        <Code2 className="mr-2 h-6 w-6" />
+        <CodeIcon className="mr-2 h-6 w-6" />
         <p className="text-sm">
           Built by{" "}
           <Link className="underline underline-offset-4" href={twitterUrl}>

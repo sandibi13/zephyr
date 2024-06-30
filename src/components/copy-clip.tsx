@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { toast } from "sonner";
 import { useState } from "react";
-import { Check, Copy } from "lucide-react";
+import { CheckIcon, CopyIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 
 export const CopyClip = ({ text }: { text: string }) => {
@@ -17,7 +17,7 @@ export const CopyClip = ({ text }: { text: string }) => {
     }, 2000);
     await navigator.clipboard.writeText(text);
     toast("Copied to clipboard", {
-      icon: <Copy className="h-4 w-4" />,
+      icon: <CopyIcon className="h-4 w-4" />,
     });
   };
 
@@ -28,16 +28,16 @@ export const CopyClip = ({ text }: { text: string }) => {
         value={text}
         className="bg-secondary text-muted-foreground"
       />
-      <Button size="sm" onClick={() => copyToClipboard()}>
+      <Button size="icon" onClick={() => copyToClipboard()}>
         {copied ? (
-          <Check
+          <CheckIcon
             className={cn(
               copied ? "opacity-100" : "opacity-0",
               "h-5 w-5 transition-opacity duration-500"
             )}
           />
         ) : (
-          <Copy className="h-5 w-5" />
+          <CopyIcon className="h-5 w-5" />
         )}
       </Button>
     </div>

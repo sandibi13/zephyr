@@ -1,4 +1,4 @@
-import { Bot } from "lucide-react";
+import { RocketIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
@@ -11,7 +11,7 @@ export const Header = () => {
           className="flex items-center justify-center text-xl font-medium"
           href="/"
         >
-          <Bot className="mr-2 h-5 w-5" /> ZephyrAI
+          <RocketIcon className="mr-2 h-5 w-5" /> ZephyrAI
         </Link>
         <nav></nav>
         <div className="ml-auto">
