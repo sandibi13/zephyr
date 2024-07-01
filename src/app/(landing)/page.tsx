@@ -19,8 +19,7 @@ export default function LandingPage() {
           </h1>
           <p className="text-balance mb-10 mt-4 text-center text-muted-foreground md:text-lg lg:text-xl">
             Experience AI-driven conversations with our Next.js Chatbot,
-            featuring Auth.js, Prisma, Stripe, Tailwind CSS, ShadCN-UI, and
-            React Email.
+            featuring Auth.js, Prisma, Tailwind CSS, ShadCN-UI, and React Email.
           </p>
           <div className="mb-10">
             <div className="mx-auto max-w-[430px]">
@@ -35,7 +34,7 @@ export default function LandingPage() {
               </a>
             </Button>
             <Button size="default" asChild>
-              <Link href="/sign-in">Get Started</Link>
+              <Link href="/chat">Get Started</Link>
             </Button>
           </div>
         </div>
