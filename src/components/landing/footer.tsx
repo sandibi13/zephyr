@@ -18,7 +18,7 @@ export const Footer = () => {
           </Link>
           . Get the source code from{" "}
           <Link className="underline underline-offset-4" href={githubUrl}>
-            Github
+            GitHub
           </Link>
         </p>
         <div className="ml-auto">
