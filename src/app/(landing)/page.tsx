@@ -1,6 +1,6 @@
 import { CopyClip } from "@/components/copy-clip";
 import { Button } from "@/components/ui/button";
-import { GitHubLogoIcon, RocketIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, VercelLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +12,7 @@ export default function LandingPage() {
       <section className="mx-auto grid min-h-[calc(100vh-300px)] max-w-5xl flex-col items-center justify-center gap-4 py-10 text-center md:py-12">
         <div className="p-4">
           <div className="mb-10 flex items-center justify-center gap-3">
-            <RocketIcon className="h-14 w-14" />
+            <VercelLogoIcon className="h-16 w-16" />
           </div>
           <h1 className="text-balance bg-gradient-to-tr from-black/70 via-black to-black/60 bg-clip-text text-center text-3xl font-bold text-transparent dark:from-zinc-400/10 dark:via-white/90 dark:to-white/20 sm:text-5xl md:text-6xl lg:text-7xl">
             AI Chatbot Application

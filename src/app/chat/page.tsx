@@ -3,7 +3,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -14,7 +13,7 @@ export default function ChatPage() {
   return (
     <>
       <header className="hidden md:block lg:block">
-        <div className="sticky top-0 p-3">
+        <div className="sticky top-0 p-3 mb-4">
           <div className="flex items-center justify-between">
             <Button variant="ghost">
               <div className="flex items-center justify-between space-x-1">
@@ -29,13 +28,11 @@ export default function ChatPage() {
                   <AvatarIcon className="h-7 w-7" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
+              <DropdownMenuContent>
+                <DropdownMenuItem>My Account</DropdownMenuItem>
                 <DropdownMenuItem>Settings</DropdownMenuItem>
-                <DropdownMenuItem>Support</DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Sign out</DropdownMenuItem>
+                <DropdownMenuItem>Logout</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

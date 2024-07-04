@@ -1,4 +1,4 @@
-import { RocketIcon } from "@radix-ui/react-icons";
+import { VercelLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
@@ -11,7 +11,7 @@ export const Header = () => {
           className="flex items-center justify-center text-xl font-medium"
           href="/"
         >
-          <RocketIcon className="mr-2 h-5 w-5" /> ZephyrAI
+          <VercelLogoIcon className="mr-2 h-5 w-5" /> ZephyrAI
         </Link>
         <div className="ml-auto">
           <Button variant="secondary" asChild>
