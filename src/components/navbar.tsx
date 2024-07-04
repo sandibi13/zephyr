@@ -22,7 +22,7 @@ export const Navbar = () => {
             <SheetContent side="left">{/* Sheet content */}</SheetContent>
           </Sheet>
 
-          <Button variant="ghost">
+          <Button variant="ghost" size="sm">
             <div className="flex items-center justify-between space-x-1">
               <h1 className="font-medium text-lg">ZephyrAI</h1>
               <ChevronDownIcon className="h-4 w-4" />

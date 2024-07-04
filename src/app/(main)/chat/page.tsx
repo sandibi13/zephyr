@@ -1,3 +1,4 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -6,7 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { AvatarIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
 
@@ -16,7 +17,7 @@ export default function ChatPage() {
       <header className="hidden md:block lg:block">
         <div className="sticky top-0 p-3 mb-4">
           <div className="flex items-center justify-between">
-            <Button variant="ghost">
+            <Button variant="ghost" size="sm">
               <div className="flex items-center justify-between space-x-1">
                 <h1 className="font-medium text-lg">ZephyrAI</h1>
                 <ChevronDownIcon className="h-4 w-4" />
@@ -26,10 +27,13 @@ export default function ChatPage() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
-                  <AvatarIcon className="h-7 w-7" />
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage src="https://github.com/sandibi13.png" />
+                    <AvatarFallback>SB</AvatarFallback>
+                  </Avatar>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent align="end">
                 <DropdownMenuItem>My Account</DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href="/settings">Settings</Link>
