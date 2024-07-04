@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { AvatarIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 import React from "react";
 
 export default function ChatPage() {
@@ -30,7 +31,9 @@ export default function ChatPage() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>My Account</DropdownMenuItem>
-                <DropdownMenuItem>Settings</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/settings">Settings</Link>
+                </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>Logout</DropdownMenuItem>
               </DropdownMenuContent>
