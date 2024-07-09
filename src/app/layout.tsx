@@ -7,7 +7,8 @@ import { cn } from "~/lib/utils";
 
 export const metadata: Metadata = {
   title: "Zephyr",
-  description: "Your favorite ai-chatbot with generative-ui",
+  description:
+    "Your ultimate AI chatbot with a dynamic, generative UI experience",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
