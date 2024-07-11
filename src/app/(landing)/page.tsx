@@ -19,7 +19,7 @@ export default function LandingPage() {
           <div className="mb-10 flex items-center justify-center gap-3">
             <VercelLogoIcon className="h-14 w-14" />
             <PlusIcon className="h-8 w-8" />
-            <Icons.ChatBotIcon className="h-14 w-14" />
+            <Icons.ChatBot className="h-14 w-14" />
           </div>
           <h1 className="text-balance bg-gradient-to-tr from-black/70 via-black to-black/60 bg-clip-text text-center text-3xl font-bold text-transparent dark:from-zinc-400/10 dark:via-white/90 dark:to-white/20 sm:text-5xl md:text-6xl lg:text-7xl">
             Generative AI Chatbot Application
