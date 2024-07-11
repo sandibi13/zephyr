@@ -20,6 +20,7 @@ export const Footer = () => {
           <Link className="underline underline-offset-4" href={githubUrl}>
             GitHub
           </Link>
+          .
         </p>
         <div className="ml-auto">
           <ModeToggle />

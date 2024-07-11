@@ -11,7 +11,7 @@ export const Header = () => {
           className="flex items-center justify-center text-xl font-medium"
           href="/"
         >
-          <Icons.BotIcon className="mr-2 h-5 w-5" /> ZephyrAI
+          <Icons.ChatBotIcon className="mr-2 h-5 w-5" /> Zephyr
         </Link>
         <div className="ml-auto">
           <Button variant="secondary" asChild>

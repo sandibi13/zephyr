@@ -27,6 +27,7 @@ export const CopyClip = ({ text }: { text: string }) => {
         readOnly
         value={text}
         className="bg-secondary text-muted-foreground"
+        aria-label="text to copy"
       />
       <Button size="icon" onClick={() => copyToClipboard()}>
         {copied ? (

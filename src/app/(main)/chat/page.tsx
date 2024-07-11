@@ -19,7 +19,7 @@ export default function ChatPage() {
           <div className="flex items-center justify-between">
             <Button variant="ghost" size="sm">
               <div className="flex items-center justify-between space-x-1">
-                <h1 className="text-lg font-medium">ZephyrAI</h1>
+                <h1 className="text-lg font-medium">Zephyr</h1>
                 <ChevronDownIcon className="h-4 w-4" />
               </div>
             </Button>
