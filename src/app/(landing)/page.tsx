@@ -8,8 +8,8 @@ import {
 } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
-
-const githubUrl = "https://github.com/sandibi13/zephyr";
+import { features, githubUrl } from "~/constants";
+import { HoverCard } from "~/components/landing/hover-card";
 
 export default function LandingPage() {
   return (
@@ -44,6 +44,28 @@ export default function LandingPage() {
             <Button size="lg" asChild>
               <Link href="/chat">Get Started</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container mx-auto lg:max-w-screen-lg">
+          <h1 className="mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+            <a id="features"></a> Features
+          </h1>
+          <p className="mb-10 text-balance text-center text-muted-foreground md:text-lg lg:text-xl">
+            Explore the powerful features of our AI-assisted chatbot, designed
+            to enhance your interaction experience and provide instant, relevant
+            responses.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {features.map((feature, i) => (
+              <HoverCard
+                key={i}
+                name={feature.name}
+                description={feature.description}
+                logo={<feature.logo className="h-12 w-12" />}
+              />
+            ))}
           </div>
         </div>
       </section>

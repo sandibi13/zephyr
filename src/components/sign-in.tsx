@@ -60,7 +60,7 @@ export const SignIn = () => {
               <Link href="/sign-up">Not signed up? Sign up now.</Link>
             </Button>
             <Button variant="link" size="sm" className="p-0" asChild>
-              <Link href="#">Forgot password?</Link>
+              <Link href="/reset-password">Forgot password?</Link>
             </Button>
           </div>
 
