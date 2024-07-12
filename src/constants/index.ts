@@ -4,8 +4,8 @@ export const links = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/#features" },
   {
-    name: "Documentation",
-    href: "/",
+    name: "Engage",
+    href: "/#engage",
   },
 ];
 

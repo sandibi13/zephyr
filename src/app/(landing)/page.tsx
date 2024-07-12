@@ -36,10 +36,10 @@ export default function LandingPage() {
           </div>
           <div className="flex justify-center gap-4">
             <Button size="lg" variant="outline" asChild>
-              <a href={githubUrl}>
+              <Link href={githubUrl}>
                 <GitHubLogoIcon className="mr-1 h-5 w-5" />
                 GitHub
-              </a>
+              </Link>
             </Button>
             <Button size="lg" asChild>
               <Link href="/chat">Get Started</Link>
@@ -66,6 +66,25 @@ export default function LandingPage() {
                 logo={<feature.logo className="h-12 w-12" />}
               />
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="pt-10 md:pt-12">
+        <div className="container mx-auto p-8 lg:max-w-screen-lg">
+          <h1 className="mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+            <a id="engage"></a> Engage
+          </h1>
+          <p className="mb-10 text-balance text-center text-muted-foreground md:text-lg lg:text-xl">
+            We value your feedback and participation. Learn more about our
+            platform and share your suggestions to help us improve.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/feedback">Feedback</Link>
+            </Button>
+            <Button size="lg" asChild>
+              <Link href="/sign-up">Sign up</Link>
+            </Button>
           </div>
         </div>
       </section>
