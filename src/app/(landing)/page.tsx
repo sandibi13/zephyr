@@ -83,7 +83,7 @@ export default function LandingPage() {
               <Link href="/feedback">Feedback</Link>
             </Button>
             <Button size="lg" asChild>
-              <Link href="/sign-up">Sign up</Link>
+              <Link href="/chat">Get Started</Link>
             </Button>
           </div>
         </div>

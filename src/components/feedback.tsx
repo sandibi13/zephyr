@@ -15,7 +15,7 @@ import Link from "next/link";
 export const Feedback = () => {
   return (
     <Card className="w-full max-w-md">
-      <CardHeader>
+      <CardHeader className="text-center">
         <CardTitle className="text-2xl">Share feedback!</CardTitle>
         <CardDescription>
           We value your input and welcome your feedback.
