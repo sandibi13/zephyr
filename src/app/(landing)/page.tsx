@@ -70,7 +70,7 @@ export default function LandingPage() {
         </div>
       </section>
       <section className="pt-10 md:pt-12">
-        <div className="container mx-auto p-8 lg:max-w-screen-lg">
+        <div className="container mx-auto px-4 pb-4 pt-8 lg:max-w-screen-lg">
           <h1 className="mb-4 text-center text-3xl font-bold md:text-4xl lg:text-5xl">
             <a id="engage"></a> Engage
           </h1>
