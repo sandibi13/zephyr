@@ -3,12 +3,10 @@ import { Icons } from "~/components/icons";
 export const links = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/#features" },
-  {
-    name: "Engage",
-    href: "/#engage",
-  },
+  { name: "Engage", href: "/#engage" },
 ];
 
+export const twitterUrl = "https://twitter.com/sandibi13";
 export const githubUrl = "https://github.com/sandibi13/zephyr";
 
 export const features = [

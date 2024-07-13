@@ -2,9 +2,7 @@ import { CodeIcon } from "@radix-ui/react-icons";
 import React from "react";
 import { ModeToggle } from "~/components/mode-toggle";
 import Link from "next/link";
-
-const twitterUrl = "https://twitter.com/sandibi13";
-const githubUrl = "https://github.com/sandibi13/zephyr";
+import { githubUrl, twitterUrl } from "~/constants";
 
 export const Footer = () => {
   return (
