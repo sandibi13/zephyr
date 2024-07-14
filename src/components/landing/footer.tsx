@@ -1,6 +1,6 @@
 import { CodeIcon } from "@radix-ui/react-icons";
 import React from "react";
-import { ModeToggle } from "~/components/mode-toggle";
+import { ModeToggle } from "~/components/landing/mode-toggle";
 import Link from "next/link";
 import { githubUrl, twitterUrl } from "~/constants";
 

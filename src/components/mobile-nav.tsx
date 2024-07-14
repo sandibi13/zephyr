@@ -8,10 +8,10 @@ import {
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
-export const Navbar = () => {
+export const MobileNav = () => {
   return (
     <nav className="block md:hidden lg:hidden">
-      <div className="sticky top-0 p-3">
+      <div className="sticky top-0 p-2.5">
         <div className="flex items-center justify-between">
           <Sheet>
             <SheetTrigger asChild>
