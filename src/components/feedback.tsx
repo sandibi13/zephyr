@@ -16,7 +16,7 @@ export const Feedback = () => {
   return (
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl">Share feedback!</CardTitle>
+        <CardTitle className="text-2xl">Share Feedback</CardTitle>
         <CardDescription>
           We value your input and welcome your feedback.
         </CardDescription>
