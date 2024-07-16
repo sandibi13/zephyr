@@ -26,7 +26,7 @@ export default function LandingPage() {
           </h1>
           <p className="mb-10 mt-4 text-balance text-center text-muted-foreground md:text-lg lg:text-xl">
             Experience AI-driven conversations with our Next.js Chatbot,
-            featuring LuciaAuth, Drizzle, TailwindCSS, ShadCN-UI, NeonDB and
+            featuring LuciaAuth, Drizzle, TailwindCSS, ShadCN-UI, XataDB and
             Vercel.
           </p>
           <div className="mb-10">
