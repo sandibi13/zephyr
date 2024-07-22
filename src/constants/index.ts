@@ -9,6 +9,17 @@ export const links = [
 export const twitterUrl = "https://twitter.com/sandibi13";
 export const githubUrl = "https://github.com/sandibi13/zephyr";
 
+export enum Paths {
+  Home = "/",
+  SignIn = "/sign-in",
+  SignUp = "/sign-up",
+  Chat = "/chat",
+  Feedback = "/feedback",
+  Settings = "/settings",
+  VerifyEmail = "/verify-email",
+  ResetPassword = "/reset-password",
+}
+
 export const features = [
   {
     name: "Real-time Messaging",

@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import React from "react";
 import { ResetEmail } from "~/components/reset-email";
 import {
@@ -7,8 +8,13 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
+import { Paths } from "~/constants";
+import { validateRequest } from "~/lib/auth/validate-request";
 
-export default function ResetPasswordPage() {
+export default async function ResetPasswordPage() {
+  const { user } = await validateRequest();
+  if (user) redirect(Paths.Chat);
+
   return (
     <>
       <Card className="w-full max-w-md">

@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import React from "react";
 import {
   Card,
@@ -7,8 +8,14 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 import { VerifyCode } from "~/components/verify-code";
+import { Paths } from "~/constants";
+import { validateRequest } from "~/lib/auth/validate-request";
 
-export default function VerifyEmailPage() {
+export default async function VerifyEmailPage() {
+  const { user } = await validateRequest();
+  if (!user) redirect(Paths.SignIn);
+  if (user.emailVerified) redirect(Paths.Chat);
+
   return (
     <>
       <Card className="w-full max-w-md">
