@@ -22,7 +22,7 @@ export default async function VerifyEmailPage() {
         <CardHeader>
           <CardTitle className="text-2xl">Verify Email</CardTitle>
           <CardDescription>
-            Verification code was sent to <strong>user.email</strong>. Check
+            Verification code was sent to <strong>{user.email}</strong>. Check
             your spam folder if you can&apos;t find the email.
           </CardDescription>
         </CardHeader>

@@ -39,7 +39,5 @@ declare module "lucia" {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface DatabaseSessionAttributes {}
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface DatabaseUserAttributes extends Omit<DbUser, "hashedPassword"> {}

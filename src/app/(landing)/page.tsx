@@ -42,7 +42,7 @@ export default function LandingPage() {
               </Link>
             </Button>
             <Button size="lg" asChild>
-              <Link href="/chat">Get Started</Link>
+              <Link href="/sign-in">Get Started</Link>
             </Button>
           </div>
         </div>

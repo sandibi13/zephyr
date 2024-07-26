@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Card,
@@ -11,8 +13,14 @@ import Link from "next/link";
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
+import { useFormState } from "react-dom";
+import { signin } from "~/server/actions/auth";
+import { PasswordInput } from "./password-input";
+import { SubmitButton } from "./submit-button";
 
 export const SignIn = () => {
+  const [state, formAction] = useFormState(signin, null);
+
   return (
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
@@ -33,7 +41,7 @@ export const SignIn = () => {
           <div className="mx-2 text-muted-foreground">or</div>
           <div className="flex-grow border-t border-muted" />
         </div>
-        <form className="grid gap-4">
+        <form action={formAction} className="grid gap-4">
           <div className="space-y-2">
             <Label>Email</Label>
             <Input
@@ -47,7 +55,7 @@ export const SignIn = () => {
 
           <div className="space-y-2">
             <Label>Password</Label>
-            <Input
+            <PasswordInput
               required
               placeholder="********"
               autoComplete="current-password"
@@ -64,7 +72,20 @@ export const SignIn = () => {
             </Button>
           </div>
 
-          <Button className="w-full">Sign In</Button>
+          {state?.fieldError ? (
+            <ul className="list-disc space-y-1 rounded-lg border bg-destructive/10 p-2 text-[0.8rem] font-medium text-destructive">
+              {Object.values(state.fieldError).map((err) => (
+                <li className="ml-4" key={err}>
+                  {err}
+                </li>
+              ))}
+            </ul>
+          ) : state?.formError ? (
+            <p className="rounded-lg border bg-destructive/10 p-2 text-[0.8rem] font-medium text-destructive">
+              {state?.formError}
+            </p>
+          ) : null}
+          <SubmitButton className="w-full">Sign In</SubmitButton>
           <Button variant="outline" className="w-full" asChild>
             <Link href="/">Cancel</Link>
           </Button>

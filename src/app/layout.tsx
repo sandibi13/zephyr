@@ -2,8 +2,9 @@ import "~/styles/globals.css";
 
 import { fontSans } from "~/lib/fonts";
 import type { Metadata, Viewport } from "next";
-import { Providers } from "~/components/providers";
+import { Providers } from "~/lib/providers";
 import { cn } from "~/lib/utils";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Zephyr",
@@ -34,6 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">{children}</div>
+          <Toaster />
         </Providers>
       </body>
     </html>
