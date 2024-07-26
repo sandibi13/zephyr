@@ -8,7 +8,7 @@ export const links = [
 
 export const twitterUrl = "https://twitter.com/sandibi13";
 export const githubUrl = "https://github.com/sandibi13/zephyr";
-export const EMAIL_SENDER = "'Zephyr' <noreply@example.com>";
+export const EMAIL_SENDER = "'Zephyr' <onboarding@resend.dev>";
 
 export enum Paths {
   Home = "/",
