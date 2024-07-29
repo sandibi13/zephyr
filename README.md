@@ -1,29 +1,45 @@
-# Create T3 App
+# Zephyr - Your ultimate AI chatbot with a dynamic, generative UI experience
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Key Features
 
-## What's next? How do I make an app with this?
+- **Dynamic UI Components:** 🖥️ Leverage React components to render dynamic and interactive chatbot responses.
+- **Flexible Authentication:** 🔐 Implement robust email authentication with LuciaAuth and future plans for Google authentication.
+- **Responsive Design:** 📱 Ensure a seamless user experience across all devices with Tailwind CSS.
+- **Database Integration:** 🗄️ Utilize PostgreSQL for reliable and scalable data management, enhanced by Drizzle ORM.
+- **Email Notifications:** ✉️ Send beautifully crafted emails using React Email for notifications and password resets.
+- **Intuitive User Interface:** 🎨 Build user-friendly interfaces with ShadCN UI for an engaging chat experience.
+- **Seamless Dev Experience:** 💻 Simplify development with a comprehensive setup and easy-to-follow instructions.
+- **Efficient Data Management:** 📊 Use Drizzle ORM for efficient database operations and type safety.
+- **Future-Proofing:** 🚀 Stay ahead with a roadmap that includes Google authentication and advanced AI integrations.
+- **Scalable Architecture:** 🏗️ Design a scalable application ready to handle future enhancements and increased user load.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Tech Stack
 
 - [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
+- [Lucia](https://lucia-auth.com/)
+- [Drizzle ORM](https://orm.drizzle.team/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [React Email](https://react.email/)
 
-## Learn More
+## Get Started
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1. Clone this repository to your local machine.
+2. Copy `.env.example` to `.env` and fill in the required environment variables.
+3. Run `pnpm install` to install dependencies.
+6. Run `pnpm db:push` to push your schema to the database.
+7. Execute `pnpm dev` to start the development server and enjoy!
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Roadmap
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- [x] Landing page UI, Chat page UI
+- [x] Email authentication
+- [ ] Sign-out
+- [ ] Google authentication
+- [ ] Password reset
+- [ ] AI integration
 
-## How do I deploy this?
+## Contributing
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+To contribute, fork the repository and create a feature branch. Check your changes, and if possible, open an issue for discussion before submitting a pull request. Follow project guidelines, and welcome feedback to ensure a smooth integration of your contributions. Your pull requests are warmly welcome.
