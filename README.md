@@ -40,6 +40,7 @@ Your ultimate AI chatbot with a dynamic, generative UI experience
 - [x] Landing page UI, Chat page UI
 - [x] Email authentication
 - [x] Sign-out
+- [x] Discord authentication
 - [ ] Google authentication
 - [ ] Password reset
 - [ ] AI integration

@@ -31,7 +31,7 @@ export const SignIn = () => {
       </CardHeader>
       <CardContent>
         <Button variant="outline" className="w-full" asChild>
-          <Link href="#">
+          <Link href="/sign-in/discord">
             <DiscordLogoIcon className="mr-2 h-5 w-5" />
             Sign in with Discord
           </Link>

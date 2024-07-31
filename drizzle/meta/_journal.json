@@ -8,6 +8,20 @@
       "when": 1721492684777,
       "tag": "0000_pale_exiles",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1722429420102,
+      "tag": "0001_closed_quicksilver",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1722443117034,
+      "tag": "0002_living_magma",
+      "breakpoints": true
     }
   ]
 }

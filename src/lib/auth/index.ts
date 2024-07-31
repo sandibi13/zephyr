@@ -3,6 +3,8 @@ import { DrizzlePostgreSQLAdapter } from "@lucia-auth/adapter-drizzle";
 import { env } from "~/env";
 import { db } from "~/server/db";
 import { sessions, users, type User as DbUser } from "~/server/db/schema";
+import { Discord } from "arctic";
+import { absoluteUrl } from "../utils";
 
 const adapter = new DrizzlePostgreSQLAdapter(db, sessions, users);
 
@@ -30,6 +32,12 @@ export const lucia = new Lucia(adapter, {
     },
   },
 });
+
+export const discord = new Discord(
+  env.DISCORD_CLIENT_ID,
+  env.DISCORD_CLIENT_SECRET,
+  absoluteUrl("/sign-in/discord/callback"),
+);
 
 declare module "lucia" {
   interface Register {
