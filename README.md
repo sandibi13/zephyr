@@ -1,4 +1,8 @@
-# Zephyr - Your ultimate AI chatbot with a dynamic, generative UI experience
+# Zephyr
+
+## Description
+
+Your ultimate AI chatbot with a dynamic, generative UI experience
 
 ## Key Features
 
@@ -35,7 +39,7 @@
 
 - [x] Landing page UI, Chat page UI
 - [x] Email authentication
-- [ ] Sign-out
+- [x] Sign-out
 - [ ] Google authentication
 - [ ] Password reset
 - [ ] AI integration

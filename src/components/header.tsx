@@ -1,18 +1,12 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import Link from "next/link";
+import { ProfileDropdown } from "./profile-dropdown";
+import { validateRequest } from "~/lib/auth/validate-request";
 
-export const Header = () => {
+export const Header = async () => {
+  const { user } = await validateRequest();
+
   return (
     <header className="hidden md:block lg:block">
       <div className="sticky top-0 p-3">
@@ -24,26 +18,13 @@ export const Header = () => {
             </div>
           </Button>
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Avatar className="h-8 w-8">
-                <AvatarImage src="https://github.com/sandibi13.png" />
-                <AvatarFallback>SB</AvatarFallback>
-              </Avatar>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                <Link href="/settings">Settings</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/">Homepage</Link>
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          {user ? (
+            <ProfileDropdown
+              avatar={user.avatar}
+              email={user.email}
+              className="ml-auto"
+            />
+          ) : null}
         </div>
       </div>
     </header>
