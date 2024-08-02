@@ -9,7 +9,7 @@ export const Header = async () => {
 
   return (
     <header className="hidden md:block lg:block">
-      <div className="sticky top-0 p-3">
+      <div className="sticky top-0 h-16 w-full px-4 py-3">
         <div className="flex items-center justify-between">
           <Button variant="ghost" size="sm">
             <div className="flex items-center justify-between space-x-1">

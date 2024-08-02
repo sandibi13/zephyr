@@ -7,7 +7,7 @@ import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
 export const Sidebar = () => {
   return (
     <div className="hidden flex-col gap-2 border-r bg-muted/10 text-foreground md:flex lg:flex">
-      <div className="sticky top-0 p-3">
+      <div className="sticky top-0 h-16 w-full px-4 py-3">
         <div className="flex items-center justify-between">
           <Tooltip>
             <TooltipTrigger asChild>
