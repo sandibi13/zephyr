@@ -11,7 +11,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 export const MobileNav = () => {
   return (
     <nav className="block md:hidden lg:hidden">
-      <div className="sticky top-0 p-3">
+      <div className="sticky top-0 h-16 w-full px-4 py-3">
         <div className="flex items-center justify-between">
           <Sheet>
             <SheetTrigger asChild>

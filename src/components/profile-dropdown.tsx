@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { SignOut } from "./sign-out";
-import { Avatar, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 export const ProfileDropdown = ({
   email,
@@ -27,9 +27,12 @@ export const ProfileDropdown = ({
         <Avatar className="h-8 w-8">
           <AvatarImage
             src={
-              avatar ?? "https://source.boringavatars.com/marble/60/" + email
+              avatar ??
+              "https://api.dicebear.com/9.x/glass/svg?seed={email}" + email
             }
+            alt="avatar"
           />
+          <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
