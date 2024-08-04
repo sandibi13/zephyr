@@ -1,10 +1,6 @@
 import * as React from "react";
 import { Button } from "./ui/button";
-import {
-  ChevronDownIcon,
-  HamburgerMenuIcon,
-  Pencil2Icon,
-} from "@radix-ui/react-icons";
+import { HamburgerMenuIcon, Pencil2Icon } from "@radix-ui/react-icons";
 import {
   Sheet,
   SheetContent,
@@ -16,6 +12,7 @@ import { validateRequest } from "~/lib/auth/validate-request";
 import { UpgradeCard } from "./ui/upgrade-card";
 import { ProfileDropdown } from "./profile-dropdown";
 import Link from "next/link";
+import { MainDropdown } from "./main-dropdown";
 
 export const MobileNav = async () => {
   const { user } = await validateRequest();
@@ -51,12 +48,7 @@ export const MobileNav = async () => {
             </SheetContent>
           </Sheet>
 
-          <Button variant="ghost" size="sm">
-            <div className="flex items-center justify-between space-x-1">
-              <h1 className="text-lg font-medium">Zephyr</h1>
-              <ChevronDownIcon className="h-4 w-4" />
-            </div>
-          </Button>
+          <MainDropdown />
 
           {user ? (
             <ProfileDropdown avatar={user.avatar} email={user.email} />
