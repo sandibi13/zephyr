@@ -15,7 +15,7 @@ export enum Paths {
   SignIn = "/sign-in",
   SignUp = "/sign-up",
   Chat = "/chat",
-  Feedback = "/feedback",
+  Pricing = "/pricing",
   Settings = "/settings",
   VerifyEmail = "/verify-email",
   ResetPassword = "/reset-password",

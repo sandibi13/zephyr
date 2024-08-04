@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Pencil2Icon, ViewVerticalIcon } from "@radix-ui/react-icons";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
+import { UpgradeCard } from "./ui/upgrade-card";
 
 export const Sidebar = () => {
   return (
@@ -31,9 +32,11 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      {/* Chat History */}
+      {/* Chat history */}
 
-      {/* Upgrade Plan Button */}
+      <div className="sticky mt-auto w-full px-4 py-3">
+        <UpgradeCard />
+      </div>
     </div>
   );
 };

@@ -75,12 +75,12 @@ export default function LandingPage() {
             <a id="engage"></a> Engage
           </h1>
           <p className="mb-10 text-balance text-center text-muted-foreground md:text-lg lg:text-xl">
-            We value your feedback and participation. Learn more about our
-            platform and share your suggestions to help us improve.
+            Discover more about our platform and see how it can benefit you.
+            Explore our features and tools to maximize your productivity.
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" variant="outline" asChild>
-              <Link href="/feedback">Feedback</Link>
+              <Link href={githubUrl}>Learn More</Link>
             </Button>
             <Button size="lg" asChild>
               <Link href="/chat">Get Started</Link>

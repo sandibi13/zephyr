@@ -1,6 +1,6 @@
 "use client";
 
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
+import { ExclamationTriangleIcon, ExitIcon } from "@radix-ui/react-icons";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { signout } from "~/server/actions/auth";
@@ -44,7 +44,10 @@ export const SignOut = () => {
         className="px-2 py-1.5 text-sm text-muted-foreground outline-none"
         asChild
       >
-        <button>Sign out</button>
+        <button className="flex items-center gap-2">
+          <ExitIcon className="h-4 w-4" />
+          Sign out
+        </button>
       </AlertDialogTrigger>
       <AlertDialogContent className="max-w-xs">
         <AlertDialogHeader>

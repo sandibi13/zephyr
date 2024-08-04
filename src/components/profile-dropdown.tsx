@@ -11,6 +11,8 @@ import {
 } from "./ui/dropdown-menu";
 import { SignOut } from "./sign-out";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { GearIcon, HomeIcon } from "@radix-ui/react-icons";
+import { Icons } from "./icons";
 
 export const ProfileDropdown = ({
   email,
@@ -24,7 +26,7 @@ export const ProfileDropdown = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className={className}>
-        <Avatar className="h-8 w-8">
+        <Avatar className="h-7 w-7">
           <AvatarImage
             src={
               avatar ??
@@ -32,7 +34,7 @@ export const ProfileDropdown = ({
             }
             alt="avatar"
           />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarFallback>YO</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -45,19 +47,25 @@ export const ProfileDropdown = ({
             className="cursor-pointer text-muted-foreground"
             asChild
           >
-            <Link href="/settings">Settings</Link>
+            <Link href="/settings" className="flex items-center gap-2">
+              <GearIcon className="h-4 w-4" /> Settings
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem
             className="cursor-pointer text-muted-foreground"
             asChild
           >
-            <Link href="#">Pricing</Link>
+            <Link href="/pricing" className="flex items-center gap-2">
+              <Icons.Dollar className="h-4 w-4" /> Pricing
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem
             className="cursor-pointer text-muted-foreground"
             asChild
           >
-            <Link href="/">Homepage</Link>
+            <Link href="/" className="flex items-center gap-2">
+              <HomeIcon className="h-4 w-4" /> Homepage
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
