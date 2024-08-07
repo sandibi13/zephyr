@@ -2,6 +2,7 @@ import { MobileNav } from "~/components/mobile-nav";
 import { Sidebar } from "~/components/sidebar";
 import React from "react";
 import { Header } from "~/components/header";
+import { PromptInput } from "~/components/prompt-input";
 
 export default function ChatLayout({
   children,
@@ -15,6 +16,7 @@ export default function ChatLayout({
         <Header />
         <MobileNav />
         {children}
+        <PromptInput />
       </div>
     </div>
   );
