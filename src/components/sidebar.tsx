@@ -16,7 +16,7 @@ export const Sidebar = () => {
                 <ViewVerticalIcon className="h-5 w-5" />
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Sidebar</TooltipContent>
+            <TooltipContent side="right">Sidebar</TooltipContent>
           </Tooltip>
 
           <Tooltip>
