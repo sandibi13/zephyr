@@ -41,9 +41,9 @@ Your ultimate AI chatbot with a dynamic, generative UI experience
 - [x] Email authentication
 - [x] Sign-out
 - [x] Discord authentication
+- [x] AI integration
 - [ ] Google authentication
 - [ ] Password reset
-- [ ] AI integration
 
 ## Contributing
 
